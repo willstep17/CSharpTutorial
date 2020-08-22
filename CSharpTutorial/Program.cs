@@ -6,9 +6,8 @@ namespace CSharpTutorial
     {
         static void Main(string[] args)
         {
-            Calculator calc = new Calculator();
-            Console.WriteLine(calc.Add(3, 5));
-            Console.WriteLine("new");
+            Book seveneves = new Book("Seveneves", "Neil Stephenson", 893);
+            Console.WriteLine(seveneves.GetTitle()); 
         }
 
     static void sayHi()
