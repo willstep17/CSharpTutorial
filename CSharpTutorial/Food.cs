@@ -11,5 +11,9 @@ namespace CSharpTutorial
         {
             Console.WriteLine("Sizzle");
         }
+        public virtual void PreserveYourself()
+        {
+            Console.WriteLine("Generically store yourself");
+        }
     }
 }
