@@ -3,6 +3,7 @@ namespace CSharpTutorial
 {
     public class Book
     {
+        private static int numberOfBooks;
         private string title;
         private string author;
         private int pages;
@@ -12,6 +13,21 @@ namespace CSharpTutorial
             this.title = title;
             this.author = author;
             this.pages = pages;
+            numberOfBooks++;
+        }
+
+        public static int GetNumberOfBooks()
+        {
+            return numberOfBooks;
+        }
+
+        public Boolean IsLong()
+        {
+            if (this.pages < 1000)
+            {
+                return true;
+            }
+            return false;
         }
 
         public string GetTitle()
