@@ -16,6 +16,8 @@ namespace CSharpTutorial
             food.CookYourself();
             apple.CookYourself();
             apple.ShineYourself();
+            food.PreserveYourself();
+            apple.PreserveYourself();
         }
 
     static void sayHi()
