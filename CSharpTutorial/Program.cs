@@ -1,10 +1,12 @@
 ﻿using System;
+using CSharpTutorial.NamespaceExperiement;
+using System.Collections;
 
 namespace CSharpTutorial
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Book seveneves = new Book("Seveneves", "Neil Stephenson", 893);
             Console.WriteLine(seveneves.GetTitle());
@@ -18,12 +20,38 @@ namespace CSharpTutorial
             apple.ShineYourself();
             food.PreserveYourself();
             apple.PreserveYourself();
+
+            InsideNamespace.SayHiFromInsideNamespace();
+
+            string[] strings = { "boat", "basketball", "tennis", "racecar" };
+            foreach(string str in strings)
+            {
+                Console.WriteLine(str);
+            }
+            Array.Sort(strings);
+            foreach(string str in strings) {
+                Console.WriteLine(str);
+            }
+
+            ArrayList testArrayList = new ArrayList();
+            testArrayList.Add(3);
+            testArrayList.Add("Summer");
+            testArrayList.Add(false);
+            PrintValues(testArrayList);
         }
 
-    static void sayHi()
-    {
-        Console.WriteLine("Hello from sayHi");
-    }
+        static void sayHi()
+        {
+            Console.WriteLine("Hello from sayHi");
+        }
+
+        private static void PrintValues(IEnumerable input)
+        {
+            foreach(Object obj in input)
+            {
+                Console.WriteLine(obj);
+            }
+        }
 
     }
 
