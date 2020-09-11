@@ -1,6 +1,8 @@
 ﻿using System;
 using CSharpTutorial.NamespaceExperiement;
 using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace CSharpTutorial
 {
@@ -52,6 +54,10 @@ namespace CSharpTutorial
                 Console.WriteLine(obj);
             }
         }
+
+        SortedDictionary<int, bool> sort = new SortedDictionary<int, bool>();
+        sort[3] = false;
+        
 
     }
 
