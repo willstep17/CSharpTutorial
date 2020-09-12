@@ -57,6 +57,10 @@ namespace CSharpTutorial
 
         SortedDictionary<int, bool> sort = new SortedDictionary<int, bool>();
         sort[3] = false;
+
+        Dictionary<int, bool> sort = new SortedDictionary<int, bool>();
+        sort[3] = false;
+        
         
 
     }
